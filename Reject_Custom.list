@@ -1,0 +1,96 @@
+# Weixin
+DOMAIN-SUFFIX,wxs.qq.com
+DOMAIN,wxa.wxs.qq.com
+DOMAIN,wxsnsdy.wxs.qq.com
+DOMAIN,wxsnsdythumb.wxs.qq.com
+
+# Yunshanfu
+DOMAIN-KEYWORD,getmobileredirecthost
+DOMAIN-SUFFIX,ads.95516.com
+DOMAIN-SUFFIX,switch.cup.com.cn
+DOMAIN-SUFFIX,tysdk.95516.com
+
+# WPSmail
+DOMAIN-KEYWORD,wpsmail
+
+# Jinrixiaoyuan
+DOMAIN-SUFFIX,getui.net
+DOMAIN-SUFFIX,ronghub.com
+
+# Dingtalk
+DOMAIN-KEYWORD,alibabachengdun
+
+# Fiil
+DOMAIN-SUFFIX,fengeek.com
+
+# Ximalaya
+DOMAIN-SUFFIX,mob.com
+DOMAIN-SUFFIX,joinchitchat.com
+DOMAIN-SUFFIX,ip-api.com
+DOMAIN-SUFFIX,api.ip.sb
+
+#Cainiao
+DOMAIN-SUFFIX,h5api.m.taobao.com
+DOMAIN-SUFFIX,gm.mmstat.com
+
+# Shenmezhidemai
+DOMAIN-SUFFIX,api.smzdm.com
+
+# Aliyunpan
+IP-CIDR,203.107.1.1/24,no-resolve
+
+# Safe browse
+DOMAIN-SUFFIX,lookup.api.bsb.baidu.com
+DOMAIN-SUFFIX,proxy.safebrowsing.apple
+DOMAIN-SUFFIX,safebrowsing.g.applimg.com
+DOMAIN-SUFFIX,safebrowsing.googleapis.com
+DOMAIN-SUFFIX,safebrowsing.urlsec.qq.com
+DOMAIN-SUFFIX,token.safebrowsing.apple
+DOMAIN-SUFFIX,vs6.bj2ct.u3.ucweb.com
+DOMAIN-SUFFIX,safebrowsing.apple
+DOMAIN-SUFFIX,u3.ucweb.com
+
+# Bilibili
+DOMAIN-SUFFIX,mall.bilibili.com
+DOMAIN-SUFFIX,passport.bilibili.com
+
+# Gaode map
+DOMAIN-SUFFIX,amap-aos-info-nogw.amap.com
+DOMAIN-SUFFIX,awaken.amap.com
+DOMAIN-SUFFIX,free-aos-cdn-image.amap.com
+
+# Lanzouyun
+DOMAIN-SUFFIX,statics.woozooo.com
+
+# Youku Cainiao
+DOMAIN-SUFFIX,acs.youku.com
+DOMAIN-SUFFIX,acs4baichuan.m.taobao.com
+DOMAIN-SUFFIX,adsmind.ugdtimg.com
+DOMAIN-SUFFIX,amdc.m.youku.com
+DOMAIN-SUFFIX,api.sm.cn
+DOMAIN-SUFFIX,apiv4-iyes.youku.com
+DOMAIN-SUFFIX,baichuan-sdk.alicdn.com
+DOMAIN-SUFFIX,httpdns.alicdn.com
+DOMAIN-SUFFIX,huichuan-mc.sm.cn
+DOMAIN-SUFFIX,huichuan.sm.cn
+DOMAIN-SUFFIX,iyes.youku.com
+DOMAIN-SUFFIX,m-vali.cp31.ott.cibntv.net
+DOMAIN-SUFFIX,mc.atm.youku.com
+DOMAIN-SUFFIX,nbsdk-baichuan.alicdn.com
+DOMAIN-SUFFIX,pre-acs.youku.com
+DOMAIN-SUFFIX,vali-g1.cp31.ott.cibntv.net
+DOMAIN-SUFFIX,vali-ugc.cp31.ott.cibntv.net
+DOMAIN-SUFFIX,yk-ssp.ad.youku.com
+DOMAIN-SUFFIX,ykad-data.youku.com
+DOMAIN-SUFFIX,youku-acs.m.taobao.com
+
+# shihuo
+DOMAIN-SUFFIX,hzchengdun.com
+DOMAIN-SUFFIX,imagex-settings.volcimagex.net
+
+# JD
+IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
+IP-CIDR,101.124.19.122/32,no-resolve
+
+# Alipay
+DOMAIN-SUFFIX,woaizuji.com
