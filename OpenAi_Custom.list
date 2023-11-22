@@ -10,3 +10,4 @@ DOMAIN,static.cloudflareinsights.com
 DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,algolia.ne
 DOMAIN,openai-api.arkoselabs.com
+DOMAIN-SUFFIX,api.statsig.com
