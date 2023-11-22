@@ -51,4 +51,7 @@ DOMAIN-SUFFIX,jideos.com
 DOMAIN-SUFFIX,tianmu.mobi
 
 # MiniProgram
-DOMAIN-SUFFIX,vwhulian.com
+DOMAIN-SUFFIX,vwhulian.co
+
+# lemurbrowser
+DOMAIN-SUFFIX,lemurbrowser.com
