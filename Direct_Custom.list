@@ -65,8 +65,7 @@ DOMAIN-SUFFIX,54heb.com
 DOMAIN-SUFFIX,toodaylab.com
 
 # MI Browser
-DOMAIN-SUFFIX,miui.srv
-
+DOMAIN-SUFFIX,miui.sr
 
 # WPS
-DOMAIN-SUFFIX,wpscdn.co
+DOMAIN-SUFFIX,wpscdn.c
