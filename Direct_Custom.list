@@ -35,6 +35,7 @@ DOMAIN-KEYWORD,torrent
 DOMAIN-SUFFIX,puwise.com
 DOMAIN-SUFFIX,mzyunyin.com
 DOMAIN-SUFFIX,aispeech.com
+DOMAIN-SUFFIX,easemob.com
 
 # shihuo
 DOMAIN-SUFFIX,volcimagex.net
@@ -68,4 +69,4 @@ DOMAIN-SUFFIX,miui.srv
 
 
 # WPS
-DOMAIN-SUFFIX,wpscdn.com
+DOMAIN-SUFFIX,wpscdn.co
