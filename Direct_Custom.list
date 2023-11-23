@@ -59,8 +59,12 @@ DOMAIN-SUFFIX,lemurbrowser.com
 # Gongqingtuan
 DOMAIN-SUFFIX,54heb.com
 
-#Toodaylab
+# Toodaylab
 DOMAIN-SUFFIX,toodaylab.com
 
 # MI Browser
 DOMAIN-SUFFIX,miui.srv
+
+
+# WPS
+DOMAIN-SUFFIX,wpscdn.com
