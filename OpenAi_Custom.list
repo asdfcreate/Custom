@@ -1,17 +1,5 @@
 # OpenAI
 DOMAIN-KEYWORD,openaicom-api
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,api.statsig.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN,static.cloudflareinsights.com
-DOMAIN-SUFFIX,observeit.net
-DOMAIN-SUFFIX,algolia.ne
-DOMAIN,openai-api.arkoselabs.com
-DOMAIN-SUFFIX,api.statsig.com
-DOMAIN,static.cloudflareinsights.com
-DOMAIN-SUFFIX,observeit.net
-DOMAIN-SUFFIX,algolia.net
 
+DOMAIN,openai-api.arkoselabs.com
