@@ -107,3 +107,6 @@ DOMAIN-SUFFIX,mobsurl.com
 
 # liteapks
 DOMAIN-SUFFIX,update.liteapks.com
+
+# MI Browser
+DOMAIN-SUFFIX,miui.srv
