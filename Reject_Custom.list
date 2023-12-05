@@ -99,8 +99,7 @@ DOMAIN-SUFFIX,woaizuji.com
 DOMAIN-SUFFIX,admobile.top
 
 # lemurbrowser
-DOMAIN-SUFFIX,analyze.lemurbrowser.com
-DOMAIN-SUFFIX,static.lemurbrowser.com
+DOMAIN-SUFFIX,lemurbrowser.com
 
 # Xuexiton
 DOMAIN-SUFFIX,yksdks.com
