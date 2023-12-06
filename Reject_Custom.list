@@ -110,3 +110,6 @@ DOMAIN-SUFFIX,update.liteapks.com
 
 # MI Browser
 DOMAIN-SUFFIX,miui.srv
+
+# Apple
+DOMAIN-SUFFIX,api-adservices.apple.com
