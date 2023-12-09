@@ -113,3 +113,7 @@ DOMAIN-SUFFIX,miui.srv
 
 # Apple
 DOMAIN-SUFFIX,api-adservices.apple.com
+
+# Alimama
+DOMAIN-SUFFIX,mmstat.com
+DOMAIN-SUFFIX,tanx.com
