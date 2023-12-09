@@ -29,9 +29,10 @@ DOMAIN-SUFFIX,joinchitchat.com
 DOMAIN-SUFFIX,ip-api.com
 DOMAIN-SUFFIX,api.ip.sb
 
-#Cainiao
+# Alimama
+DOMAIN-SUFFIX,mmstat.com
+DOMAIN-SUFFIX,tanx.com
 DOMAIN-SUFFIX,h5api.m.taobao.com
-DOMAIN-SUFFIX,gm.mmstat.com
 
 # Shenmezhidemai
 DOMAIN-SUFFIX,api.smzdm.com
@@ -62,28 +63,6 @@ DOMAIN-SUFFIX,free-aos-cdn-image.amap.com
 # Lanzouyun
 DOMAIN-SUFFIX,statics.woozooo.com
 
-# Youku Cainiao
-DOMAIN-SUFFIX,acs.youku.com
-DOMAIN-SUFFIX,acs4baichuan.m.taobao.com
-DOMAIN-SUFFIX,adsmind.ugdtimg.com
-DOMAIN-SUFFIX,amdc.m.youku.com
-DOMAIN-SUFFIX,api.sm.cn
-DOMAIN-SUFFIX,apiv4-iyes.youku.com
-DOMAIN-SUFFIX,baichuan-sdk.alicdn.com
-DOMAIN-SUFFIX,httpdns.alicdn.com
-DOMAIN-SUFFIX,huichuan-mc.sm.cn
-DOMAIN-SUFFIX,huichuan.sm.cn
-DOMAIN-SUFFIX,iyes.youku.com
-DOMAIN-SUFFIX,m-vali.cp31.ott.cibntv.net
-DOMAIN-SUFFIX,mc.atm.youku.com
-DOMAIN-SUFFIX,nbsdk-baichuan.alicdn.com
-DOMAIN-SUFFIX,pre-acs.youku.com
-DOMAIN-SUFFIX,vali-g1.cp31.ott.cibntv.net
-DOMAIN-SUFFIX,vali-ugc.cp31.ott.cibntv.net
-DOMAIN-SUFFIX,yk-ssp.ad.youku.com
-DOMAIN-SUFFIX,ykad-data.youku.com
-DOMAIN-SUFFIX,youku-acs.m.taobao.com
-
 # shihuo
 DOMAIN-SUFFIX,hzchengdun.com
 DOMAIN-SUFFIX,imagex-settings.volcimagex.net
@@ -113,7 +92,3 @@ DOMAIN-SUFFIX,miui.srv
 
 # Apple
 DOMAIN-SUFFIX,api-adservices.apple.com
-
-# Alimama
-DOMAIN-SUFFIX,mmstat.com
-DOMAIN-SUFFIX,tanx.com
