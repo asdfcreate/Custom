@@ -1,0 +1,13 @@
+port: 7897
+socks-port: 7898
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: :9090
+
+
+
+geodata-mode: true
+geox-url: 
+    geoip: "https://github.com/soffchen/sing-geoip/releases/latest/download/geodbdb"ip.db"
+    geosite: "https://github.com/soffchen/sing-geoip/releases/latest/download/geoip.db"
