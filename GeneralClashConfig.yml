@@ -4,10 +4,3 @@ allow-lan: false
 mode: Rule
 log-level: info
 external-controller: :9090
-
-
-
-geodata-mode: true
-geox-url: 
-    geoip: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
-    geosite: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
