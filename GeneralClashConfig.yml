@@ -9,5 +9,5 @@ external-controller: :9090
 
 geodata-mode: true
 geox-url: 
-    geoip: "https://github.com/soffchen/sing-geoip/releases/latest/download/geodbdb"ip.db"
+    geoip: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
     geosite: "https://github.com/soffchen/sing-geoip/releases/latest/download/geoip.db"
