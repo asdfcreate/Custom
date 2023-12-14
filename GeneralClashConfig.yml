@@ -9,4 +9,3 @@ geodata-mode: true
 geox-url:
   geoip: "https://raw.githubusercontent.com/soffchen/geoip/release/geoip-only-cn-private.dat"
   geosite: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
-  mmdb: "https://raw.githubusercontent.com/soffchen/geoip/release/Country-only-cn-private.mmdb"
