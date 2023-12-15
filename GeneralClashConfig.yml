@@ -7,8 +7,6 @@ external-controller: :9090
 
 
 geodata-mode: true
-geodata-loader: memconservative
-geo-auto-update: false
 geox-url:
   geoip: "https://raw.githubusercontent.com/soffchen/geoip/release/geoip-only-cn-private.dat"
   geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
