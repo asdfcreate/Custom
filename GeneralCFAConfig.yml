@@ -1,13 +1,42 @@
-port: 7897
-socks-port: 7898
+mixed-port: 7897
 allow-lan: false
-mode: Rule
+mode: rule
+unified-delay: true
+tcp-concurrent: true
+ipv6: false
 log-level: info
 external-controller: :9090
 
 
-
 geodata-mode: true
-geox-url: 
-    geoip: "https://cdn.jsdelivr.net/gh/soffchen/geoip@release/geoip-only-cn-private.dat"
-    geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+geodata-loader: memconservative
+geo-auto-update: false
+geox-url:
+  geoip: "https://raw.githubusercontent.com/soffchen/geoip/release/geoip-only-cn-private.dat"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+
+
+global-ua: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/120.0.6099.119 Mobile/15E148 Safari/604.1
+find-process-mode: strict
+global-client-fingerprint: random
+ntp:
+  enable: true
+  write-to-system: false
+  server: time.apple.com
+  port: 123
+  interval: 30
+
+
+dns:
+    enable: true
+    listen: :1053
+    default-nameserver:
+        - system     
+        - 223.5.5.5
+        - 119.29.29.29       
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    nameserver:        
+        - 223.5.5.5
+ 	- 114.114.114.114
+        - 119.29.29.29
