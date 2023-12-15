@@ -4,7 +4,8 @@ mode: rule
 ipv6: false
 log-level: info
 external-controller: :9090
-
+unified-delay: true
+tcp-concurrent: true
 
 geodata-mode: true
 geox-url:
