@@ -10,3 +10,15 @@ geodata-mode: true
 geox-url:
   geoip: "https://raw.githubusercontent.com/soffchen/geoip/release/geoip-only-cn-private.dat"
   geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+
+        
+dns:
+  enable: true
+  ipv6: false
+  listen: :1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+      - 223.5.5.5
+      - 114.114.114.114
+      - 119.29.29.29
