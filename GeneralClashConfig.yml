@@ -9,6 +9,12 @@ external-controller: :9090
 
 
 geodata-mode: true
+geodata-loader: memconservative
+geo-auto-update: false
 geox-url:
   geoip: "https://raw.githubusercontent.com/soffchen/geoip/release/geoip-only-cn-private.dat"
   geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+
+
+global-ua: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
