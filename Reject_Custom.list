@@ -96,6 +96,3 @@ DOMAIN-SUFFIX,api-adservices.apple.com
 # OpenAI tracker
 DOMAIN-SUFFIX,o33249.ingest.sentry.io
 DOMAIN-SUFFIX,openaicom.imgix.net
-
-# quic
-AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOIP,CN)))
