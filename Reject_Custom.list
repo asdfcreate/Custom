@@ -93,9 +93,6 @@ DOMAIN-SUFFIX,miui.srv
 # Apple
 DOMAIN-SUFFIX,api-adservices.apple.com
 
-# quic
-AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOSITE,cn)))
-
 # OpenAI 跟踪域名
 DOMAIN-SUFFIX,o33249.ingest.sentry.io
 DOMAIN-SUFFIX,openaicom.imgix.net
