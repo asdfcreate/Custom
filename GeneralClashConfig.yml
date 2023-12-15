@@ -4,8 +4,7 @@ mode: rule
 ipv6: false
 log-level: info
 external-controller: :9090
-unified-delay: true
-tcp-concurrent: true
+
 
 geodata-mode: true
 geox-url:
@@ -24,8 +23,6 @@ dns:
       - 114.114.114.114
       - 119.29.29.29
 
-global-ua: Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/120.0.6099.119 Mobile/15E148 Safari/604.1
-find-process-mode: strict
 global-client-fingerprint: random
 ntp:
   enable: true
