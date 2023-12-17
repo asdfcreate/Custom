@@ -64,7 +64,6 @@ DOMAIN-SUFFIX,free-aos-cdn-image.amap.com
 DOMAIN-SUFFIX,statics.woozooo.com
 
 # shihuo
-DOMAIN-SUFFIX,hzchengdun.com
 DOMAIN-SUFFIX,imagex-settings.volcimagex.net
 
 # JD
@@ -96,3 +95,7 @@ DOMAIN-SUFFIX,api-adservices.apple.com
 # OpenAI tracker
 DOMAIN-SUFFIX,o33249.ingest.sentry.io
 DOMAIN-SUFFIX,openaicom.imgix.net
+
+# hzchengdun
+DOMAIN-SUFFIX,hzchengdun.com
+DOMAIN-SUFFIX,hzchengdun.net
