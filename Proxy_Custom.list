@@ -6,3 +6,6 @@ DOMAIN-SUFFIX,kr
 DOMAIN-SUFFIX,sg
 DOMAIN-SUFFIX,tw
 DOMAIN-SUFFIX,uk
+
+# Greasyfork
+DOMAIN-SUFFIX,greasyfork.org
