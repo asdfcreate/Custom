@@ -38,10 +38,7 @@ DOMAIN-SUFFIX,h5api.m.taobao.com
 DOMAIN-SUFFIX,api.smzdm.com
 DOMAIN-SUFFIX,homepage-api.smzdm.com
 DOMAIN-SUFFIX,user-api.smzdm.com
-DOMAIN-SUFFIX,app-api.smzdm.com
-DOMAIN-SUFFIX,haojia-api.smzdm.com
 DOMAIN-SUFFIX,article-api.smzdm.com
-
 
 # Aliyunpan
 IP-CIDR,203.107.1.1/24,no-resolve
