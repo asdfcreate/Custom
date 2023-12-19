@@ -58,7 +58,6 @@ DOMAIN-SUFFIX,u3.ucweb.com
 
 # Bilibili
 DOMAIN-SUFFIX,mall.bilibili.com
-DOMAIN-SUFFIX,passport.bilibili.com
 
 # Gaode map
 DOMAIN-SUFFIX,amap-aos-info-nogw.amap.com
