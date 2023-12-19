@@ -1,2 +1,8 @@
+# Google Play Store
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,services.googleapis.cn
+
+# Google Calendar
+DOMAIN-SUFFIX,tasks-pa.googleapis.com
+DOMAIN-SUFFIX,calendarsync-pa.googleapis.com
+DOMAIN-SUFFIX,play.googleapis.com
