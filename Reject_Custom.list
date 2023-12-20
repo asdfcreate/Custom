@@ -39,6 +39,8 @@ DOMAIN-SUFFIX,api.smzdm.com
 DOMAIN-SUFFIX,homepage-api.smzdm.com
 DOMAIN-SUFFIX,user-api.smzdm.com
 DOMAIN-SUFFIX,article-api.smzdm.com
+DOMAIN-SUFFIX,shence-import.smzdm.com
+
 
 # Aliyunpan
 IP-CIDR,203.107.1.1/24,no-resolve
