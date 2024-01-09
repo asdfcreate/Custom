@@ -1,4 +1,4 @@
-mixed-port: 7890 
+mixed-port: 7897
 allow-lan: false
 mode: rule
 log-level: info
@@ -63,14 +63,13 @@ proxy-groups:
       use:
           - subscribe_groups 
           
-# 油管      
     - name: "Youtube"
       type: select # 下面开启了自动测速
       proxies:
           - "PROXY"
       use:
           - subscribe_groups  
-# 电报      
+          
     - name: "Telegram"
       type: select # 下面开启了自动测速
       proxies:
@@ -78,8 +77,7 @@ proxy-groups:
           - "PROXY"
       use:
           - subscribe_groups  
-          
- # 推特      
+                
     - name: "Spotify"
       type: select # 下面开启了自动测速
       proxies:
@@ -87,8 +85,7 @@ proxy-groups:
           - "Auto"
       use:
           - subscribe_groups  
-
- # 推特      
+          
     - name: "Twitter"
       type: select # 下面开启了自动测速
       proxies:
@@ -97,7 +94,7 @@ proxy-groups:
       use:
           - subscribe_groups 
             
-    - name: "Netflix"
+    - name: "GoogleFCM"
       type: select # 下面开启了自动测速
       proxies:
 #         - test 这里填写你的自建节点
@@ -105,17 +102,22 @@ proxy-groups:
       use:
           - subscribe_groups  
           
-
-
-    - name: "Disney"
+    - name: "GoogleVoice"
       type: select # 下面开启了自动测速
       proxies:
 #         - test 这里填写你的自建节点
           - "Auto"
       use:
           - subscribe_groups  
-
-# chatgpt      
+          
+    - name: "GoogleServices"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups  
+        
     - name: "OpenAI"
       type: select # 下面开启了自动测速
       proxies:
@@ -123,10 +125,6 @@ proxy-groups:
           - "Auto"
       use:
           - subscribe_groups           
-
-
-
-
 
 # Tiktok      
     - name: "Tiktok"
