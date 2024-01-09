@@ -18,6 +18,13 @@ profile:
   store-selected: true
   store-fake-ip: true 
 
+ntp:
+  enable: true
+  write-to-system: false
+  server: time.apple.com
+  port: 123
+  interval: 30
+
 sniffer:               
   enable: true
   parse-pure-ip: true 
@@ -27,8 +34,6 @@ sniffer:
     HTTP:
       ports: [80, 8080-8880]
       override-destination: true
-    QUIC:
-      ports: [443, 8443]
 
 dns:
   enable: true
@@ -45,12 +50,15 @@ dns:
       - 114.114.114.114
       - 119.29.29.29
 
+proxies:
+ - {name: "Trojan", server: yqy52118.birpagi.cn, port: 52118, type: trojan, password: 1db45fce-b1b6-3daf-be0a-0b4b9fece7cf, sni: cdn-debian.org, skip-cert-verify: true}
+
 proxy-providers:
     subscribe_groups:
-        type: http 
-        url: ""
+        type: http
+        url: "https://z.luxury/link/MDQfVA0MPCmhKI2c?sub=4"
         interval: 86400 
-        path: ./config.yaml
+        path: ./providers.yaml
         health-check:
             enable: true
             interval: 83214
@@ -58,10 +66,13 @@ proxy-providers:
 
 proxy-groups:    
     - name: "Proxy"
+      type: select
+      proxies:
+          - "Trojan"
       use:
           - subscribe_groups 
           
-    - name: "Youtube"
+    - name: "YouTube"
       type: select
       proxies:
           - "Proxy"
@@ -117,7 +128,7 @@ proxy-groups:
       use:
           - subscribe_groups           
     
-    - name: "Tiktok"
+    - name: "TikTok"
       type: select
       proxies:
           - "Proxy"
@@ -128,7 +139,8 @@ proxy-groups:
       type: select
       proxies:
           - "Proxy"
-          - "Direct"                
+          - "DIRECT"    
+            
 
 rule-providers:     
     Reject_Custom:
@@ -279,7 +291,8 @@ rule-providers:
         url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/Proxy_Custom.list"  
 
 rules:
-    - SCRIPT,quic,REJECT
+    - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOSITE,cn))),REJECT
+    - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOIP,CN))),REJECT
     - RULE-SET,Reject_Custom,REJECT    
     - RULE-SET,Reject_MIUI_Custom,REJECT
     - RULE-SET,sogouinput,REJECT
@@ -301,16 +314,11 @@ rules:
     - RULE-SET,LocalAreaNetwork,DIRECT
     - RULE-SET,Lan,DIRECT
     - RULE-SET,Direct_Custom,DIRECT
-    - GEOSITE,cn,Direct
-    - GEOSITE,tld-cn,Direct
-    - GEOSITE,private,Direct
-    - GEOIP,CN,Direct,no-resolve
+    - GEOSITE,cn,DIRECT
+    - GEOSITE,tld-cn,DIRECT
+    - GEOSITE,private,DIRECT
+    - GEOIP,CN,DIRECT,no-resolve
     - RULE-SET,Proxy_Custom,Proxy
     - GEOSITE,gfw,Proxy
     - GEOSITE,geolocation-!cn,Proxy
-    - MATCH,[]FINAL
-
-script:
-  shortcuts:
-    quic: network == 'udp' and dst_port == 443
-
+    - MATCH,FINAL
