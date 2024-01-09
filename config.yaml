@@ -48,10 +48,7 @@ dns:
       - 223.5.5.5
       - 114.114.114.114
       - 119.29.29.29
-
-proxies:
- - {name: "Trojan", server: yqy52118.birpagi.cn, port: 52118, type: trojan, password: 1db45fce-b1b6-3daf-be0a-0b4b9fece7cf, sni: cdn-debian.org, skip-cert-verify: true}
-
+      
 proxy-providers:
     subscribe_groups:
         type: http
