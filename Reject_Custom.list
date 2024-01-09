@@ -103,3 +103,7 @@ DOMAIN-SUFFIX,openaicom.imgix.net
 # hzchengdun
 DOMAIN-SUFFIX,hzchengdun.com
 DOMAIN-SUFFIX,hzchengdun.net
+
+# OpenAI
+DOMAIN-SUFFIX,o33249.ingest.sentry.io
+DOMAIN-SUFFIX,openaicom.imgix.net
