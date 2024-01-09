@@ -142,5 +142,4 @@ proxy-groups:
       proxies:
 #         - test 这里填写你的自建节点
           - "Auto"
-      use:
           - subscribe_groups    
