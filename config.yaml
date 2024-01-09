@@ -44,3 +44,93 @@ dns:
       - 223.5.5.5
       - 114.114.114.114
       - 119.29.29.29
+
+proxy-providers:
+    subscribe_groups:
+        type: http # http 的 path 可空置,默认储存路径为 homedir的proxies文件夹,文件名为url的md5
+        url: "" #订阅链接存放在双引号内
+        interval: 86400 #机场订阅自动更新时间 单位：秒
+        path: ./config.yaml # 默认只允许存储在 clash 的 Home Dir，如果想存储到任意位置，添加环境变量 SKIP_SAFE_PATH_CHECK=1
+        health-check:
+            enable: true
+            interval: 83214
+            # lazy: true
+            url: http://connectivitycheck.gstatic.com/generate_204
+
+proxy-groups:    
+    - name: "PROXY"
+      type: select # 下面开启了自动测速
+      use:
+          - subscribe_groups 
+# 奈飞      
+    - name: "Netflix"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups  
+# 迪士尼      
+    - name: "Disney"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups  
+# 油管      
+    - name: "Youtube"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups  
+# 声破天      
+    - name: "Spotify"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups 
+# Tiktok      
+    - name: "Tiktok"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups        
+# 电报      
+    - name: "Telegram"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups  
+# 推特      
+    - name: "Twitter"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups  
+# chatgpt      
+    - name: "OpenAI"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups  
+# Copilot
+    - name: "Copilot"
+      type: select # 下面开启了自动测速
+      proxies:
+#         - test 这里填写你的自建节点
+          - "Auto"
+      use:
+          - subscribe_groups    
