@@ -241,28 +241,7 @@ rule-providers:
         behavior: classical    
         format: text
         interval: 86400
-        url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/OpenAI_Custom.list"  
-
-    OpenAI_Custom:
-        type: http
-        behavior: classical    
-        format: text
-        interval: 86400
-        url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/OpenAI_Custom.list"  
-        
-    OpenAI_Custom:
-        type: http
-        behavior: classical    
-        format: text
-        interval: 86400
-        url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/OpenAI_Custom.list"  
-        
-    OpenAI_Custom:
-        type: http
-        behavior: classical    
-        format: text
-        interval: 86400
-        url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/OpenAI_Custom.list"  
+        url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/OpenAI_Custom.list" 
 
     TikTok:
         type: http
@@ -316,16 +295,19 @@ rules:
     - RULE-SET,GoogleFCM,GoogleFCM
     - RULE-SET,GoogleVoice,GoogleVoice
     - RULE-SET,GoogleServices,GoogleServices
-    - RULE-SET,Twitter,Twit ter  OpenAI 
+    - RULE-SET,OpenAI,OpenAI
+    - RULE-SET,ChatGPT_Voice,OpenAI
+    - RULE-SET,OpenAI_Custom,OpenAI
+    - RULE-SET,TikTok,TikTok
     - RULE-SET,Twitter,Twitter
-    - RULE-SET,Twitter,Twitter
-    - RULE-SET,Twitter,Twitter
-    - RULE-SET,Twitter,Twitter
-
-
+    - RULE-SET,LocalAreaNetwork,DIRECT
     - RULE-SET,Lan,DIRECT
-    - RULE-SET,icloud,DIRECT
-    - RULE-SET,apple,DIRECT
+    - RULE-SET,Direct_Custom,DIRECT
+    - GEOSITE,cn,Direct
+    - GEOSITE,tld-cn,Direct
+    - GEOSITE,private,Direct
+    - GEOIP,CN,Direct,no-resolve
+
     - GEOSITE,onedrive,DIRECT
     - GEOSITE,microsoft@cn,DIRECT 
     - GEOSITE,steam@cn,DIRECT
