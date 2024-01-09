@@ -47,99 +47,97 @@ dns:
 
 proxy-providers:
     subscribe_groups:
-        type: http # http 的 path 可空置,默认储存路径为 homedir的proxies文件夹,文件名为url的md5
-        url: "" #订阅链接存放在双引号内
-        interval: 86400 #机场订阅自动更新时间 单位：秒
-        path: ./config.yaml # 默认只允许存储在 clash 的 Home Dir，如果想存储到任意位置，添加环境变量 SKIP_SAFE_PATH_CHECK=1
+        type: http 
+        url: ""
+        interval: 86400 
+        path: ./config.yaml
         health-check:
             enable: true
             interval: 83214
-            # lazy: true
             url: http://connectivitycheck.gstatic.com/generate_204
 
 proxy-groups:    
-    - name: "PROXY"
-      type: select # 下面开启了自动测速
+    - name: "Proxy"
       use:
           - subscribe_groups 
           
     - name: "Youtube"
-      type: select # 下面开启了自动测速
+      type: select
       proxies:
-          - "PROXY"
+          - "Proxy"
       use:
           - subscribe_groups  
           
     - name: "Telegram"
-      type: select # 下面开启了自动测速
+      type: select
       proxies:
-#         - test 这里填写你的自建节点
-          - "PROXY"
+          - "Proxy"
       use:
           - subscribe_groups  
                 
     - name: "Spotify"
-      type: select # 下面开启了自动测速
+      type: select
       proxies:
-#         - test 这里填写你的自建节点
-          - "Auto"
+          - "Proxy"
       use:
           - subscribe_groups  
           
     - name: "Twitter"
-      type: select # 下面开启了自动测速
+      type: select
       proxies:
-#         - test 这里填写你的自建节点
-          - "Auto"
+          - "Proxy"
       use:
           - subscribe_groups 
             
     - name: "GoogleFCM"
-      type: select # 下面开启了自动测速
+      type: select
       proxies:
-#         - test 这里填写你的自建节点
-          - "Auto"
+          - "Proxy"
       use:
           - subscribe_groups  
           
     - name: "GoogleVoice"
-      type: select # 下面开启了自动测速
+      type: select
       proxies:
-#         - test 这里填写你的自建节点
-          - "Auto"
+          - "Proxy"
       use:
           - subscribe_groups  
           
     - name: "GoogleServices"
-      type: select # 下面开启了自动测速
+      type: select
       proxies:
-#         - test 这里填写你的自建节点
-          - "Auto"
+          - "Proxy"
       use:
           - subscribe_groups  
         
     - name: "OpenAI"
-      type: select # 下面开启了自动测速
+      type: select
       proxies:
-#         - test 这里填写你的自建节点
-          - "Auto"
+          - "Proxy"
       use:
           - subscribe_groups           
-
-# Tiktok      
+    
     - name: "Tiktok"
-      type: select # 下面开启了自动测速
+      type: select
       proxies:
-#         - test 这里填写你的自建节点
-          - "Auto"
+          - "Proxy"
       use:
           - subscribe_groups        
-
-
-# Copilot
-    - name: "Copilot"
-      type: select # 下面开启了自动测速
+          
+    - name: "Direct"
+      type: select
       proxies:
-#         - test 这里填写你的自建节点
-          - "Auto"
-          - subscribe_groups    
+          - "DIRECT"
+          
+    - name: "Reject"
+      type: select
+      proxies:
+          - "REJECT"
+          
+    - name: "Final"
+      type: select
+      proxies:
+          - "Proxy"
+          - "Direct"                
+
+
