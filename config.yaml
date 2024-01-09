@@ -123,17 +123,7 @@ proxy-groups:
           - "Proxy"
       use:
           - subscribe_groups        
-          
-    - name: "Direct"
-      type: select
-      proxies:
-          - "DIRECT"
-          
-    - name: "Reject"
-      type: select
-      proxies:
-          - "REJECT"
-          
+             
     - name: "FINAL"
       type: select
       proxies:
@@ -293,7 +283,14 @@ rule-providers:
         behavior: classical    
         format: text
         interval: 86400
-        url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/Direct_Custom.list"  
+        url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/Direct_Custom.list" 
+
+    Lan:
+        type: http
+        behavior: classical    
+        format: text
+        interval: 86400
+        url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list" 
 
     Proxy_Custom:
         type: http
@@ -304,7 +301,11 @@ rule-providers:
 
 rules:
     - SCRIPT,quic,REJECT
-    - RULE-SET,private,DIRECT
+    - RULE-SET,Lan,REJECT    
+    - RULE-SET,Lan,REJECT
+    - RULE-SET,Lan,REJECT
+    - RULE-SET,Lan,REJECT
+    - RULE-SET,Lan,DIRECT
     - RULE-SET,icloud,DIRECT
     - RULE-SET,apple,DIRECT
     - GEOSITE,onedrive,DIRECT
