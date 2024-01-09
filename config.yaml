@@ -275,7 +275,7 @@ rule-providers:
         behavior: classical    
         format: text
         interval: 86400
-        url: "https://hub.gitmirror.com/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list" 
+        url: "https://hub.gitmirror.com/https://raw.githubusercontent.com/Repcz/Tool/X/Clash/Rules/Lan.list" 
 
     Proxy_Custom:
         type: http
