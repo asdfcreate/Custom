@@ -10,8 +10,8 @@ global-client-fingerprint: chrome
 
 geodata-mode: true
 geox-url:
-  geoip: "https://raw.githubusercontent.com/soffchen/geoip/release/geoip-only-cn-private.dat"
-  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  geoip: "https://github.com/soffchen/sing-geoip/releases/latest/download/geoip-cn.db"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.db"
   mmdb: "https://raw.githubusercontent.com/soffchen/geoip/release/Country-only-cn-private.mmdb"
   
 profile:
@@ -302,7 +302,17 @@ rule-providers:
         interval: 86400
         url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/Proxy_Custom.list"  
 
-
+rules:
+#域名规则
+    - SCRIPT,quic,REJECT
+    - RULE-SET,private,DIRECT
+    - RULE-SET,icloud,DIRECT
+    - RULE-SET,apple,DIRECT
+    - GEOSITE,onedrive,DIRECT
+    - GEOSITE,microsoft@cn,DIRECT 
+    - GEOSITE,steam@cn,DIRECT
+    - GEOSITE,category-games@cn,DIRECT 
+    - MATCH,[]FINAL
 
 
 
