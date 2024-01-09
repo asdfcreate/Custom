@@ -307,11 +307,9 @@ rules:
     - GEOSITE,tld-cn,Direct
     - GEOSITE,private,Direct
     - GEOIP,CN,Direct,no-resolve
-
-    - GEOSITE,onedrive,DIRECT
-    - GEOSITE,microsoft@cn,DIRECT 
-    - GEOSITE,steam@cn,DIRECT
-    - GEOSITE,category-games@cn,DIRECT 
+    - RULE-SET,Proxy_Custom,Proxy
+    - GEOSITE,gfw,Proxy
+    - GEOSITE,geolocation-!cn,Proxy
     - MATCH,[]FINAL
 
 script:
