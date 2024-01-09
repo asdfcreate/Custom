@@ -134,7 +134,7 @@ proxy-groups:
       proxies:
           - "REJECT"
           
-    - name: "Final"
+    - name: "FINAL"
       type: select
       proxies:
           - "Proxy"
@@ -303,7 +303,6 @@ rule-providers:
         url: "https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/Proxy_Custom.list"  
 
 rules:
-#域名规则
     - SCRIPT,quic,REJECT
     - RULE-SET,private,DIRECT
     - RULE-SET,icloud,DIRECT
@@ -314,5 +313,7 @@ rules:
     - GEOSITE,category-games@cn,DIRECT 
     - MATCH,[]FINAL
 
-
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
 
