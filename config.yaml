@@ -301,10 +301,28 @@ rule-providers:
 
 rules:
     - SCRIPT,quic,REJECT
-    - RULE-SET,Lan,REJECT    
-    - RULE-SET,Lan,REJECT
-    - RULE-SET,Lan,REJECT
-    - RULE-SET,Lan,REJECT
+    - RULE-SET,Reject_Custom,REJECT    
+    - RULE-SET,Reject_MIUI_Custom,REJECT
+    - RULE-SET,sogouinput,REJECT
+    - RULE-SET,BlockHttpDNS,REJECT
+    - RULE-SET,Advertising,REJECT   
+
+    - RULE-SET,YouTube,YouTube
+    - RULE-SET,Telegram,Telegram      
+    - RULE-SET,Telegram_Custom,Telegram   
+    - RULE-SET,Spotify,Spotify   
+    - RULE-SET,Twitter,Twitter
+    
+    - RULE-SET,GoogleFCM,GoogleFCM
+    - RULE-SET,GoogleVoice,GoogleVoice
+    - RULE-SET,GoogleServices,GoogleServices
+    - RULE-SET,Twitter,Twit ter  OpenAI 
+    - RULE-SET,Twitter,Twitter
+    - RULE-SET,Twitter,Twitter
+    - RULE-SET,Twitter,Twitter
+    - RULE-SET,Twitter,Twitter
+
+
     - RULE-SET,Lan,DIRECT
     - RULE-SET,icloud,DIRECT
     - RULE-SET,apple,DIRECT
