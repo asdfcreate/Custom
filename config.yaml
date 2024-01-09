@@ -246,7 +246,7 @@ rule-providers:
         behavior: classical    
         format: text
         interval: 86400
-        url: "https://gitlab.com/lodepuly/vpn_tool/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"  
+        url: "https://hub.gitmirror.com/https://gitlab.com/lodepuly/vpn_tool/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"  
 
     OpenAI_Custom:
         type: http
@@ -281,7 +281,7 @@ rule-providers:
         behavior: classical    
         format: text
         interval: 86400
-        url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list" 
+        url: "https://hub.gitmirror.com/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list" 
 
     Proxy_Custom:
         type: http
