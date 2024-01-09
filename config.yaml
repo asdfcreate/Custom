@@ -52,7 +52,7 @@ dns:
 proxy-providers:
     subscribe_groups:
         type: http
-        url: "https://z.luxury/link/MDQfVA0MPCmhKI2c?sub=4"
+        url: ""
         interval: 86400 
         path: ./providers.yaml
         health-check:
