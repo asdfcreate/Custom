@@ -7,7 +7,7 @@ find-process-mode: strict
 tcp-concurrent: true
 ipv6: false
 global-client-fingerprint: chrome
-
+keep-alive-interval: 30
 
 profile:
   store-selected: true
@@ -20,6 +20,15 @@ ntp:
   port: 123
   interval: 30
 
+ sniffer:               
+  enable: true
+  parse-pure-ip: true 
+  sniff:
+    TLS:            
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
       
 geodata-mode: true
 geodata-loader: memconservative
