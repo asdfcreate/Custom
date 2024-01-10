@@ -19,8 +19,8 @@ ntp:
   server: time.apple.com
   port: 123
   interval: 30
-
- sniffer:               
+  
+sniffer:               
   enable: true
   parse-pure-ip: true 
   sniff:
