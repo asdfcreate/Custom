@@ -103,3 +103,7 @@ DOMAIN-SUFFIX,openaicom.imgix.net
 # hzchengdun
 DOMAIN-SUFFIX,hzchengdun.com
 DOMAIN-SUFFIX,hzchengdun.net
+
+# quic
+AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOSITE,cn)))
+AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOIP,CN)))
