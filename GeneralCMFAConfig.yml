@@ -3,6 +3,8 @@ allow-lan: false
 mode: rule
 log-level: info
 external-controller: 0.0.0.0:9090 
+find-process-mode: strict 
+tcp-concurrent: true
 ipv6: false
 global-client-fingerprint: chrome
 
@@ -11,6 +13,13 @@ profile:
   store-selected: true
   store-fake-ip: true 
   
+ntp:
+  enable: true
+  write-to-system: false
+  server: time.apple.com
+  port: 123
+  interval: 30
+
 sniffer:               
   enable: true
   parse-pure-ip: true 
@@ -20,6 +29,15 @@ sniffer:
     HTTP:
       ports: [80, 8080-8880]
       override-destination: true
+      
+geodata-mode: true
+geodata-loader: memconservative
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: "https://raw.githubusercontent.com/soffchen/geoip/release/geoip-only-cn-private.dat"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://raw.githubusercontent.com/soffchen/geoip/release/Country-only-cn-private.mmdb" 
       
 dns:
   enable: true
