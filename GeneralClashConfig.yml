@@ -32,7 +32,15 @@ sniffer:
       ports: [80, 8080-8880]
       override-destination: true
       
-
+geodata-mode: true
+geodata-loader: memconservative
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: "https://raw.githubusercontent.com/soffchen/geoip/release/geoip-only-cn-private.dat"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://raw.githubusercontent.com/soffchen/geoip/release/Country-only-cn-private.mmdb" 
+  
 dns:
   enable: true
   prefer-h3: false
