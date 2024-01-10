@@ -8,8 +8,6 @@ tcp-concurrent: true
 ipv6: false
 global-client-fingerprint: chrome
 keep-alive-interval: 30
-geodata-mode: true
-
 
 profile:
   store-selected: true
@@ -31,7 +29,17 @@ sniffer:
     HTTP:
       ports: [80, 8080-8880]
       override-destination: true
-     
+      
+geodata-mode: true
+geodata-loader: memconservative
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geoip: "https://github.com/soffchen/sing-geoip/releases/latest/download/geoip-cn.db"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.db"
+  mmdb: "https://raw.githubusercontent.com/soffchen/geoip/release/Country-only-cn-private.mmdb"    
+
+
 dns:
   enable: true
   prefer-h3: false
