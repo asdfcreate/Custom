@@ -7,8 +7,6 @@ find-process-mode: strict
 tcp-concurrent: true
 ipv6: false
 global-client-fingerprint: chrome
-geodata-mode: true
-geodata-loader: memconservative
 
 
 profile:
