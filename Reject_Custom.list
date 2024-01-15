@@ -42,8 +42,6 @@ DOMAIN-SUFFIX,article-api.smzdm.com
 DOMAIN-SUFFIX,shence-import.smzdm.com
 DOMAIN-SUFFIX,app-api.smzdm.com
 
-# Aliyunpan
-IP-CIDR,203.107.1.1/24,no-resolve
 
 # Safe browse
 DOMAIN-SUFFIX,lookup.api.bsb.baidu.com
@@ -70,16 +68,11 @@ DOMAIN-SUFFIX,statics.woozooo.com
 # shihuo
 DOMAIN-SUFFIX,imagex-settings.volcimagex.net
 
-# JD
-IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
-IP-CIDR,101.124.19.122/32,no-resolve
-
 # Alipay
 DOMAIN-SUFFIX,woaizuji.com
 
 # Jnote
 DOMAIN-SUFFIX,admobile.top
-DOMAIN-SUFFIX,oth.eve.mdt.qq.com
 
 # lemurbrowser
 DOMAIN-SUFFIX,lemurbrowser.com
