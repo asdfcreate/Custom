@@ -13,7 +13,6 @@ profile:
   store-selected: true
   store-fake-ip: true 
 
-
 sniffer:               
   enable: true
   parse-pure-ip: true 
@@ -54,6 +53,7 @@ dns:
     geoip-code: CN
     geosite:
       - gfw
+      - geolocation-!cn
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
