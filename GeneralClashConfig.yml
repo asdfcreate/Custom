@@ -47,14 +47,3 @@ dns:
       - 119.29.29.29
   proxy-server-nameserver:
     - 8.8.8.8
-  fallback:
-    - 8.8.4.4
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    geosite:
-      - gfw
-      - geolocation-!cn
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
