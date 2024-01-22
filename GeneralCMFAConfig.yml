@@ -13,7 +13,6 @@ profile:
   store-selected: true
   store-fake-ip: true 
   
-  
 sniffer:               
   enable: true
   parse-pure-ip: true 
