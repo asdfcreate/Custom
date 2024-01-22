@@ -1,0 +1,12 @@
+- 'oth.str.mdt.qq.com'
+- 'otheve.beacon.qq.com'
+- '+.macime.sogou.com'
+- '+.ime.sogou.com'
+- '+.pinyin.sogou.com'
+- '+.account.sogou.com'
+- '+.sginput.qq.com'
+- '+.shouji.sogou.com'
+- '+.get.sogou.com'
+PROCESS-NAME,SOgouTaskManager
+PROCESS-NAME,SogouServices
+PROCESS-NAME,SogouInput
