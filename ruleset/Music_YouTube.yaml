@@ -1,3 +1,6 @@
 payload:
+  - AND,((PROCESS-NAME,musicfree),(RULE-SET,youtube))
+  - AND,((PROCESS-NAME,musicfree),(DOMAIN-SUFFIX,appinstall.life))
 
-  - AND,((PROCESS-NAME,fun.upup.musicfree),(RULE-SET,youtube))
+
+
