@@ -1,5 +1,5 @@
 payload:
-  - AND,((PROCESS-NAME,fun.upup.musicfree),(DOMAIN-SUFFIX,googlevideo.com))
-  - AND,((PROCESS-NAME,fun.upup.musicfree),(DOMAIN-SUFFIX,ytimg.com))
-  - AND,((PROCESS-NAME,fun.upup.musicfree),(DOMAIN-SUFFIX,youtube.com))
-  - AND,((PROCESS-NAME,fun.upup.musicfree),(DOMAIN-SUFFIX,appinstall.life))
+  - AND,((PROCESS-NAME,),(DOMAIN-SUFFIX,googlevideo.com))
+  - AND,((PROCESS-NAME,),(DOMAIN-SUFFIX,ytimg.com))
+  - AND,((PROCESS-NAME,),(DOMAIN-SUFFIX,youtube.com))
+  - AND,((PROCESS-NAME,),(DOMAIN-SUFFIX,appinstall.life))
