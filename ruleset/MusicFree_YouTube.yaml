@@ -1,5 +1,0 @@
-payload:
-  - AND,((PROCESS-NAME,),(DOMAIN-SUFFIX,googlevideo.com))
-  - AND,((PROCESS-NAME,),(DOMAIN-SUFFIX,ytimg.com))
-  - AND,((PROCESS-NAME,),(DOMAIN-SUFFIX,youtube.com))
-  - AND,((PROCESS-NAME,),(DOMAIN-SUFFIX,appinstall.life))
