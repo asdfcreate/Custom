@@ -1,3 +1,5 @@
 payload:
-    - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOSITE,cn))),REJECT
-    - AND,(AND,(AND,((DOMAIN,baidu.com),(NETWORK,UDP))DST-PORT,443),(NETWORK,UDP)),(NOT,((GEOIP,CN))),REJECT
+    - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,workers.dev))
+    - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,workers.dev))
+    - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,workers.dev))
+
