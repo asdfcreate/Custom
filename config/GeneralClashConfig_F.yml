@@ -27,8 +27,8 @@ geodata-loader: memconservative
 geo-auto-update: true
 geo-update-interval: 12
 geox-url:
-  geoip: "https://raw.githubusercontent.com/soffchen/geoip/release/geoip-only-cn-private.dat"
-  mmdb: "https://raw.githubusercontent.com/soffchen/geoip/release/Country-only-cn-private.mmdb" 
+  geoip: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat"
+  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb" 
       
 dns:
   enable: true
