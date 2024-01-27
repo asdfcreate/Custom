@@ -7,6 +7,7 @@ find-process-mode: strict
 tcp-concurrent: true
 ipv6: false
 global-client-fingerprint: chrome
+keep-alive-interval: 30
 
 profile:
   store-selected: true
@@ -46,3 +47,12 @@ dns:
   proxy-server-nameserver:
       - https://1.0.0.1/dns-query
       - tls://8.8.4.4:853
+  fallback:
+    - https://1.0.0.1/dns-query
+    - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
