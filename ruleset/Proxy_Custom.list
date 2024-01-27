@@ -13,3 +13,6 @@ DOMAIN-SUFFIX,tampermonkey.net
 
 # Musicfree
 PROCESS-NAME,musicfree
+
+# buzzing
+DOMAIN-SUFFIX,buzzing.cc
