@@ -1,14 +1,10 @@
 payload:
-
-  - DOMAIN,oth.str.mdt.qq.com
-  - DOMAIN,otheve.beacon.qq.com
-  - DOMAIN-SUFFIX,macime.sogou.com
-  - DOMAIN-SUFFIX,ime.sogou.com
-  - DOMAIN-SUFFIX,pinyin.sogou.com
-  - DOMAIN-SUFFIX,account.sogou.com
-  - DOMAIN-SUFFIX,sginput.qq.com
-  - DOMAIN-SUFFIX,shouji.sogou.com
-  - DOMAIN-SUFFIX,get.sogou.com
-  - PROCESS-NAME,SogouTaskManager
-  - PROCESS-NAME,SogouServices
-  - PROCESS-NAME,SogouInput
+  - 'oth.str.mdt.qq.com'
+  - 'otheve.beacon.qq.com'
+  - '+.macime.sogou.com'
+  - '+.ime.sogou.com'
+  - '+.pinyin.sogou.com'
+  - '+.account.sogou.com'
+  - '+.sginput.qq.com'
+  - '+.shouji.sogou.com'
+  - '+.get.sogou.com'
