@@ -9,6 +9,7 @@ DOMAIN-SUFFIX,uk
 
 # Greasyfork
 DOMAIN-SUFFIX,greasyfork.org
+DOMAIN-SUFFIX,tampermonkey.net
 
 # Musicfree
 PROCESS-NAME,musicfree
