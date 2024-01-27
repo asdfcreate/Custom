@@ -22,7 +22,7 @@ sniffer:
       ports: [80, 8080-8880]
       override-destination: true
       
-geodata-mode: false
+geodata-mode: true
 geodata-loader: memconservative
 geo-auto-update: true
 geo-update-interval: 24
