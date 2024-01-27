@@ -1,5 +1,4 @@
 payload:
-  
   - '+.eu'
   - '+.hk'
   - '+.jp'
@@ -9,4 +8,4 @@ payload:
   - '+.uk'
   - '+.greasyfork.org'
   - '+.tampermonkey.net'
-   - '+.buzzing.cc' 
+  - '+.buzzing.cc' 
