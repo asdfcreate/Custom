@@ -10,9 +10,6 @@ DOMAIN-SUFFIX,ads.95516.com
 DOMAIN-SUFFIX,switch.cup.com.cn
 DOMAIN-SUFFIX,tysdk.95516.com
 
-# WPSmail
-DOMAIN-KEYWORD,wpsmail
-
 # Jinrixiaoyuan
 DOMAIN-SUFFIX,getui.net
 DOMAIN-SUFFIX,ronghub.com
@@ -34,14 +31,6 @@ DOMAIN-SUFFIX,mmstat.com
 DOMAIN-SUFFIX,tanx.com
 DOMAIN-SUFFIX,h5api.m.taobao.com
 
-# Shenmezhidemai
-DOMAIN-SUFFIX,api.smzdm.com
-DOMAIN-SUFFIX,homepage-api.smzdm.com
-DOMAIN-SUFFIX,user-api.smzdm.com
-DOMAIN-SUFFIX,article-api.smzdm.com
-DOMAIN-SUFFIX,shence-import.smzdm.com
-DOMAIN-SUFFIX,app-api.smzdm.com
-
 
 # Safe browse
 DOMAIN-SUFFIX,lookup.api.bsb.baidu.com
@@ -53,9 +42,6 @@ DOMAIN-SUFFIX,token.safebrowsing.apple
 DOMAIN-SUFFIX,vs6.bj2ct.u3.ucweb.com
 DOMAIN-SUFFIX,safebrowsing.apple
 DOMAIN-SUFFIX,u3.ucweb.com
-
-# Bilibili
-DOMAIN-SUFFIX,mall.bilibili.com
 
 # Gaode map
 DOMAIN-SUFFIX,amap-aos-info-nogw.amap.com
