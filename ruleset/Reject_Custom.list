@@ -14,8 +14,6 @@ DOMAIN-SUFFIX,tysdk.95516.com
 DOMAIN-SUFFIX,getui.net
 DOMAIN-SUFFIX,ronghub.com
 
-# Dingtalk
-DOMAIN-KEYWORD,alibabachengdun
 
 # Fiil
 DOMAIN-SUFFIX,fengeek.com
@@ -25,11 +23,6 @@ DOMAIN-SUFFIX,mob.com
 DOMAIN-SUFFIX,joinchitchat.com
 DOMAIN-SUFFIX,ip-api.com
 DOMAIN-SUFFIX,api.ip.sb
-
-# Alimama
-DOMAIN-SUFFIX,mmstat.com
-DOMAIN-SUFFIX,tanx.com
-DOMAIN-SUFFIX,h5api.m.taobao.com
 
 
 # Safe browse
@@ -50,9 +43,6 @@ DOMAIN-SUFFIX,free-aos-cdn-image.amap.com
 
 # Lanzouyun
 DOMAIN-SUFFIX,statics.woozooo.com
-
-# shihuo
-DOMAIN-SUFFIX,imagex-settings.volcimagex.net
 
 # Alipay
 DOMAIN-SUFFIX,woaizuji.com
