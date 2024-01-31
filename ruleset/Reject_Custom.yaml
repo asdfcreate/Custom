@@ -36,3 +36,6 @@ payload:
   - '+.hzchengdun.com'
   - '+.hzchengdun.net'
   - '+.imagex-settings.volcimagex.net'
+  - 'tpstelemetry.tencent.com'
+  - 'pcapp-data-collect.youku.com'
+  - 'api-share.mob.com'
