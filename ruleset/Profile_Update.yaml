@@ -4,4 +4,3 @@ payload:
     - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,githubusercontent.com))
     - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,gitlab.com))
     - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,id9.cc))
-    - AND,((PROCESS-NAME,mihomo),(GEOIP,CLOUDFLARE))
