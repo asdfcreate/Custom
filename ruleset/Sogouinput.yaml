@@ -8,5 +8,6 @@ payload:
   - '+.sginput.qq.com'
   - '+.shouji.sogou.com'
   - '+.get.sogou.com'
+  - '+.gateway.sogou.com'
   - 'gateway.sogou.com'
   - 'pinyin.sogou.com'
