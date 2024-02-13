@@ -48,6 +48,7 @@ geox-url:
   
 dns:
   enable: true
+  use-hosts: true
   cache-algorithm: arc
   prefer-h3: false
   ipv6: false
