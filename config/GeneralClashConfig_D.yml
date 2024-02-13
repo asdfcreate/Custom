@@ -75,7 +75,6 @@ dns:
     - "pool.ntp.org"
   nameserver-policy: 
     "rule-set:private": "system" 
-    
   nameserver:
     - 223.5.5.5
     - 114.114.114.114
