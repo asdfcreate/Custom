@@ -45,13 +45,36 @@ geox-url:
       
 dns:
   enable: true
+  cache-algorithm: arc
   prefer-h3: false
   ipv6: false
-  listen: :1053
+  listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  fake-ip-filter: [ '*.lan', 'cable.auth.com', '*.msftconnecttest.com', '*.msftncsi.com', 'pool.ntp.org', '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*' ] 
-  nameserver-policy: { 'rule-set:private': system }
+  fake-ip-filter:
+    - "*.example"
+    - "*.home.arpa"
+    - "*.invalid"
+    - "+.lan"
+    - "+.local"
+    - "*.localdomain"
+    - "*.localhost"
+    #  Windows 10 Connnect Detection
+    - "+.microsoft.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    #  NTP Service
+    - "ntp.*.com"
+    - "time-ios.apple.com"
+    - "time-macos.apple.com"
+    - "time.*.com"
+    - "time.*.gov"
+    - "+.pool.ntp.org"
+    - "*.cloud.tencent.com"
+    - "*.pool.ntp.org"
+    - "pool.ntp.org"
+  nameserver-policy: 
+    "rule-set:private": "system" 
   nameserver:
     - 223.5.5.5
     - 114.114.114.114
