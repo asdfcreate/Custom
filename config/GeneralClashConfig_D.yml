@@ -75,7 +75,7 @@ dns:
     - "pool.ntp.org"
   nameserver-policy: 
     "rule-set:private" : "system" 
-    "rule-set:Reject_Custom,category-httpdns,AWAvenue-Ads-Rule-Clash,reject_ipcidr" : rcode://success
+    "rule-set:Reject_Custom,category-httpdns,AWAvenue-Ads-Rule-Clash" : rcode://success
   nameserver:
     - 223.5.5.5
     - 114.114.114.114
