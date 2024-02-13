@@ -52,7 +52,7 @@ dns:
   cache-algorithm: arc
   prefer-h3: false
   ipv6: false
-  listen: :1053
+  listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -79,6 +79,7 @@ dns:
     - "pool.ntp.org"
   nameserver-policy: 
     "rule-set:private": "system" 
+    "rule-set:Reject_Custom,category-httpdns,AWAvenue-Ads-Rule-Clash": rcode://success
   nameserver:
     - 223.5.5.5
     - 114.114.114.114
