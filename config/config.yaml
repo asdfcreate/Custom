@@ -2,7 +2,7 @@ mixed-port: 7897
 allow-lan: false
 mode: rule
 log-level: info
-external-controller: 127.0.0.1:9090
+external-controller: 127.0.0.1:9097
 find-process-mode: strict
 tcp-concurrent: true
 ipv6: false
@@ -95,9 +95,102 @@ dns:
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
+proxy-providers:
+  provider1:
+    type: http
+    url: "http://test.com"
+    path: ./proxy_providers/provider1.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.bing.com
+      interval: 300
+      timeout: 5000
+      expected-status: 204
+    exclude-filter: (^3[1-8])
 
+proxy-groups:
+  - name: Proxy
+    type: select
+    use:
+      - provider1
+    
+  - name: Youtube
+    type: select
+    proxies:
+      - Proxy
+    use:
+      - provider1
 
+  - name: Telegram
+    type: select
+    proxies:
+      - Proxy
+    use:
+      - provider1
 
+  - name: OpenAI
+    type: select
+    proxies:
+      - Proxy
+    use:
+      - provider1
+
+  - name: Scholar
+    type: select
+    proxies:
+      - Proxy
+      - DIRECT
+    use:
+      - provider1
+    
+  - name: Google
+    type: select
+    proxies:
+      - Proxy
+    use:
+      - provider1
+      
+  - name: Notion
+    type: select
+    proxies:
+      - Proxy
+      - Google
+    use:
+      - provider1
+      
+  - name: ImTr
+    type: select
+    proxies:
+      - Proxy
+      - Google
+    use:
+      - provider1
+      
+  - name: Apple
+    type: select
+    proxies:
+      - Proxy
+      - DIRECT
+    use:
+      - provider1
+      
+  - name: Microsoft
+    type: select
+    proxies:
+      - Proxy
+      - DIRECT
+    use:
+      - provider1
+      
+  - name: Profile_Update
+    type: select
+    proxies:
+      - Proxy
+      - DIRECT
+    use:
+      - provider1
+      
 rule-providers:
   Reject_Custom:
     type: http
@@ -259,4 +352,4 @@ rules:
   - RULE-SET,ChinaIPsBGP,DIRECT,no-resolve
   - GEOIP,PRIVATE,DIRECT,no-resolve
   - GEOIP,CN,DIRECT,no-resolve
-  - MATCH,漏网之鱼
+  - MATCH,Proxy
