@@ -315,7 +315,7 @@ rule-providers:
   ChinaIPsBGP:
     type: http
     behavior: ipcidr
-    url: https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/clash-rule-provider.yml
+    url: https://hub.gitmirror.com/https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/clash-rule-provider.yml
     path: ./providers/rule-provider_ChinaIPsBGP.yaml
     interval: 3600
 rules:
