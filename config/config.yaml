@@ -320,7 +320,7 @@ rule-providers:
     interval: 3600
 rules:
   - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((RULE-SET,ChinaMax_Domain))),REJECT
-  - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((RULE-SET,ChinaIPsBGP_ipcidr,no-resolve))),REJECT
+  - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((RULE-SET,ChinaIPsBGP,no-resolve))),REJECT
   - RULE-SET,Reject_Custom,REJECT
   - RULE-SET,category-httpdns,REJECT
   - RULE-SET,AWAvenue-Ads-Rule-Clash,REJECT
