@@ -73,7 +73,7 @@ dns:
     - "*.cloud.tencent.com"
     - "*.pool.ntp.org"
     - pool.ntp.org
-    - *.mcdn.bilivideo.cn
+    - "*.mcdn.bilivideo.cn"
   nameserver-policy:
     rule-set:private: system
     rule-set:Reject_Custom,category-httpdns,AWAvenue-Ads-Rule-Clash: rcode://success
