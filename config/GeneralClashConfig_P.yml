@@ -1,0 +1,88 @@
+mixed-port: 7897
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9097
+find-process-mode: strict 
+tcp-concurrent: true
+ipv6: false
+global-client-fingerprint: chrome
+keep-alive-interval: 300
+
+profile:
+  store-selected: true
+  store-fake-ip: true 
+  
+sniffer:
+  enable: true
+  parse-pure-ip: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    QUIC:
+      ports: [443, 8443]
+  skip-domain:
+    - Mijia Cloud
+      
+ntp:
+  enable: true
+  write-to-system: false
+  server: time1.aliyun.com
+  port: 123
+  interval: 30
+      
+geodata-mode: true
+geodata-loader: memconservative
+geo-auto-update: true
+geo-update-interval: 12
+geox-url:
+  geoip: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite-lite.dat"
+  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb" 
+      
+dns:
+  enable: true
+  use-hosts: false
+  cache-algorithm: arc
+  prefer-h3: false
+  ipv6: false
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.example"
+    - "*.home.arpa"
+    - "*.invalid"
+    - "+.lan"
+    - "+.local"
+    - "*.localdomain"
+    - "*.localhost"
+    #  Windows 10 Connnect Detection
+    - "+.microsoft.com"
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    #  NTP Service
+    - "ntp.*.com"
+    - "time-ios.apple.com"
+    - "time-macos.apple.com"
+    - "time.*.com"
+    - "time.*.gov"
+    - "+.pool.ntp.org"
+    - "*.cloud.tencent.com"
+    - "*.pool.ntp.org"
+    - "pool.ntp.org"
+  nameserver-policy: 
+    "rule-set:private": "system" 
+    "rule-set:Reject_Custom,Reject_MIUI_Custom,Sogouinput,category-httpdns,AWAvenue-Ads-Rule-Clash,anti-ad-clash": rcode://success
+  nameserver:
+    - tls://1.12.12.12:853
+    - tls://223.5.5.5:853
+    - https://223.5.5.5/dns-query
+    - https://1.12.12.12/dns-query
+  proxy-server-nameserver:
+    - https://1.0.0.1/dns-query
+    - tls://8.8.4.4:853
