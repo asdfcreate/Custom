@@ -37,7 +37,7 @@ ntp:
 geodata-mode: true
 geodata-loader: memconservative
 geo-auto-update: true
-geo-update-interval: 12
+geo-update-interval: 8
 geox-url:
   geoip: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat"
   geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite-lite.dat"
