@@ -42,7 +42,7 @@ geox-url:
   mmdb: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb
 dns:
   enable: true
-  use-hosts: true
+  use-hosts: false
   cache-algorithm: arc
   prefer-h3: false
   ipv6: false
@@ -173,11 +173,17 @@ proxy-groups:
     use:
       - provider1
       
-  - name: Microsoft
+  - name: Copilot
     type: select
     proxies:
       - Proxy
-      - DIRECT
+    use:
+      - provider1
+      
+  - name: Github
+    type: select
+    proxies:
+      - Proxy
     use:
       - provider1
       
@@ -268,12 +274,18 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Domain.yaml
     path: ./providers/rule-provider_Apple_Domain.yaml
     interval: 86400
-  microsoft:
+  Copilot:
     type: http
     behavior: domain
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.yaml
-    path: ./providers/rule-provider_microsoft.yaml
-    interval: 86400
+    url: https://raw.githubusercontent.com/asdfcreate/Custom_Rule/master/ruleset/Copilot.yaml
+    path: ./providers/rule-provider_Copilot.yaml
+    interval: 28800
+  github:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.yaml
+    path: ./providers/rule-provider_github.yaml
+    interval: 28800
   private:
     type: http
     behavior: domain
@@ -322,7 +334,8 @@ rules:
   - RULE-SET,Immersive_Translate,ImTr
   - RULE-SET,google,Google
   - RULE-SET,Apple_Domain,Apple
-  - RULE-SET,microsoft,Microsoft
+  - RULE-SET,Copilot,Copilot
+  - RULE-SET,github,Github
   - RULE-SET,private,DIRECT
   - RULE-SET,ChinaMax_Domain,DIRECT
   - RULE-SET,Direct_Custom,DIRECT
