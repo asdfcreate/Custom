@@ -1,7 +1,6 @@
 payload:
 - 'api.msn.com'
 - 'assets.msn.com'
-- 'copilot.microsoft.com'
 - 'gateway.bingviz.microsoft.net'
 - 'gateway.bingviz.microsoftapp.net'
 - 'in.appcenter.ms'
@@ -27,3 +26,4 @@ payload:
 - '+.edge.microsoft.com'
 - '+.api.microsoftapp.net'
 - '+.bing-shopping.microsoft-falcon.io'
+- '+.copilot.microsoft.com'
