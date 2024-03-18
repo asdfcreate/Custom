@@ -39,3 +39,6 @@ payload:
   - 'tpstelemetry.tencent.com'
   - 'pcapp-data-collect.youku.com'
   - 'api-share.mob.com'
+  - '+.auth.be.sec.miui.com'
+  - '+.updateinfo.market.xiaomi.com'
+  - '+.api.sec.miui.com '
