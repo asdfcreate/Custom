@@ -77,7 +77,7 @@ dns:
     - "pool.ntp.org"
   nameserver-policy: 
     "rule-set:private": "system" 
-    "rule-set:Reject_Custom,Reject_MIUI_Custom,Sogouinput,category-httpdns,anti-ad-clash": rcode://success
+    "rule-set:Reject_Custom,Sogouinput,category-httpdns,anti-ad-clash": rcode://success
   nameserver:
     - tls://1.12.12.12:853
     - tls://223.5.5.5:853
