@@ -4,6 +4,7 @@ payload:
   - 'tasks-pa.googleapis.com'
   - 'calendar.google.com'
   - 'calendarsync-pa.googleapis.com'
+  - 'tasks.google.com'
   - 'play.googleapis.com'
   - 'clients6.google.com'
   - 'myaccount.google.com'
