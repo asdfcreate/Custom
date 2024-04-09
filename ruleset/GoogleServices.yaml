@@ -13,3 +13,5 @@ payload:
   - 'accounts.google.com'
   - 'accounts.google.com.*'
   - 'contacts.google.com'
+  - 'notifications-pa.googleapis.com'
+  - 'android.googleapis.com'
