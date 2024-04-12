@@ -2,3 +2,5 @@ payload:
   - 'lens.l.google.com'
   - 'telephony.goog'
   - 'voice.google.com'
+  - 'voice.googleapis.com'
+  - 'people-pa.googleapis.com'
