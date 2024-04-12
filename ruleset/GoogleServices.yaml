@@ -15,3 +15,4 @@ payload:
   - 'contacts.google.com'
   - 'notifications-pa.googleapis.com'
   - 'android.googleapis.com'
+  - 'ogs.google.com'
