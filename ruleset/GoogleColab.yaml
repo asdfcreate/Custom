@@ -1,0 +1,5 @@
+payload:
+  - 'colab.research.google.com'
+  - '*colab.googleusercontent.com'
+  - 'content.googleapis.com'
+  - '+.geller-pa.googleapis.com'
