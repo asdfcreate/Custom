@@ -1,3 +1,0 @@
-payload:
-  - AND,((PROCESS-NAME,com.google.android.youtube),(RULE-SET,youtube))
-  - AND,((PROCESS-NAME,YouTube),(RULE-SET,youtube))
