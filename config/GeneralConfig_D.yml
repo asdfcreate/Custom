@@ -34,13 +34,13 @@ ntp:
   port: 123
   interval: 30
   
-geodata-mode: False
+geodata-mode: True
 geodata-loader: memconservative
 geo-auto-update: true
 geo-update-interval: 8
 geox-url:
-  geoip: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.dat"
-  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.db"
+  geoip: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.metadb"
+  geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.db"
   mmdb: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.metadb" 
   
 dns:
