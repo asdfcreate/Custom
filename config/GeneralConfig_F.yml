@@ -39,9 +39,9 @@ geodata-loader: memconservative
 geo-auto-update: true
 geo-update-interval: 8
 geox-url:
-  geoip: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat"
-  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite-lite.dat"
-  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb" 
+  geoip: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.dat"
+  geosite: "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat"
+  mmdb: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.metadb" 
       
 dns:
   enable: true
