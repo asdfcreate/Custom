@@ -34,14 +34,14 @@ ntp:
   port: 123
   interval: 30
   
-geodata-mode: true
+geodata-mode: False
 geodata-loader: memconservative
 geo-auto-update: true
 geo-update-interval: 8
 geox-url:
-  geoip: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip-only-cn-private.dat"
+  geoip: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.dat"
   geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite-lite.dat"
-  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-only-cn-private.mmdb" 
+  mmdb: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.metadb" 
   
 dns:
   enable: true
