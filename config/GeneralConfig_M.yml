@@ -49,7 +49,7 @@ dns:
   use-hosts: false
   cache-algorithm: arc
   prefer-h3: false
-  ipv6: false
+  ipv6: true
   listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
