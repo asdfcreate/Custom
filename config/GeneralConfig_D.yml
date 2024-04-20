@@ -40,7 +40,7 @@ geo-auto-update: true
 geo-update-interval: 8
 geox-url:
   geoip: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.dat"
-  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite-lite.dat"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.db"
   mmdb: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.metadb" 
   
 dns:
