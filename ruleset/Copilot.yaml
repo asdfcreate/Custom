@@ -1,4 +1,5 @@
 payload:
-- 'sydney.bing.com'
+- '+.bing.com'
+- '+.bingapis.com'
+- '+.bing.net'
 - 'copilot.microsoft.com'
-- '+.events.data.microsoft.com'
