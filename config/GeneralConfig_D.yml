@@ -60,10 +60,6 @@ dns:
     - "+.local"
     - "*.localdomain"
     - "*.localhost"
-    #  Windows 10 Connnect Detection
-    - "+.microsoft.com"
-    - "+.msftconnecttest.com"
-    - "+.msftncsi.com"
     #  NTP Service
     - "ntp.*.com"
     - "time-ios.apple.com"
