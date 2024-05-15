@@ -36,7 +36,8 @@ ntp:
   interval: 30
       
 geodata-mode: true
-geodata-loader: standard
+geosite-matcher: succinct
+geodata-loader: memconservative 
 geo-auto-update: true
 geo-update-interval: 8
 geox-url:
