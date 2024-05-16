@@ -3,3 +3,4 @@ payload:
   - '*colab.googleusercontent.com'
   - 'content.googleapis.com'
   - '+.geller-pa.googleapis.com'
+  - 'colab.google'
