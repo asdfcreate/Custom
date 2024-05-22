@@ -13,5 +13,4 @@ payload:
 - '+.feejii.com'
 - '+.yitoupiao.net'
 - '+.wanzhi.com'
-- '+.lingyiwanwu.com'
-- '+.lingyiwanwu.net'
+- '+.lingyiwanwu.*'
