@@ -4,3 +4,4 @@ payload:
   - 'sydney.bing.com'
   - 'services.bingapis.com'
   - 'copilot.microsoft.com'
+  - 'gateway.bingviz.microsoft*.net'
