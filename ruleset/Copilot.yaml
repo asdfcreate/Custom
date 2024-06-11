@@ -2,5 +2,3 @@ payload:
   - '+.bing.*'
   - '+.bingapis.com'
   - 'copilot.microsoft.com'
-  - 'browser.events.data.msn.com'
-  - 'storage.live.com'
