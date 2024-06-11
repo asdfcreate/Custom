@@ -5,3 +5,4 @@ payload:
   - 'services.bingapis.com'
   - 'www.bingapis.com'
   - 'copilot.microsoft.com'
+  - 'login.microsoftonline.com'
