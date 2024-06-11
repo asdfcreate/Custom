@@ -1,8 +1,7 @@
 payload:
   - 'r.bing.com'
-  - 'www.bing.com'
+  - 'w*.bing.com'
   - 'sydney.bing.com'
   - 'services.bingapis.com'
-  - 'www.bingapis.com'
+  - '*.bingapis.com'
   - 'copilot.microsoft.com'
-  - 'login.microsoftonline.com'
