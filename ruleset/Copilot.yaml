@@ -1,4 +1,4 @@
 payload:
-  - '*.bing.*'
+  - '*.bing.com'
   - '*.bingapis.com'
   - 'copilot.microsoft.com'
