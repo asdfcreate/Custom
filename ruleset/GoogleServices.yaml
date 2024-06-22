@@ -7,7 +7,6 @@ payload:
   - 'tasks.google.com'
   - '+.clients6.google.com'
   - 'play.googleapis.com'
-  - 'clients6.google.com'
   - 'myaccount.google.com'
   - '+.googleusercontent.com'
   - 'accounts.google.com'
