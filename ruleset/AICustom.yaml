@@ -1,2 +1,8 @@
 payload:
+  - '+.huggingface.co'
+  - '+.hf.space'
+  - '+.mistral.ai'
+  - '+.perplexity.ai'
+  - '+.groq.com'
+  - '+.ai.cloudflare.com'
   - 'chat.sharedchat.fun'
