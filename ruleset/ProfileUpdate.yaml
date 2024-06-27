@@ -1,6 +1,0 @@
-payload:
-    - AND,((PROCESS-NAME,Clash Verge.exe),(DOMAIN-SUFFIX,workers.dev))  
-    - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,workers.dev))
-    - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,githubusercontent.com))
-    - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,gitlab.com))
-    - DOMAIN-SUFFIX,id9.cc
