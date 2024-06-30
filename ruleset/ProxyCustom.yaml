@@ -1,7 +1,2 @@
 payload:
-  - '+.greasyfork.org'
-  - '+.tampermonkey.net'
-  - '+.audiomack.com' 
-  - '+.ahhhhfs.com' 
   - '+.scriptcat.org' 
-  - '+.browserleaks.com'
