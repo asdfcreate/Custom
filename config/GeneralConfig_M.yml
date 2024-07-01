@@ -66,20 +66,6 @@ dns:
     - "+.local"
     - "*.localdomain"
     - "*.localhost"
-    #  Windows 10 Connnect Detection
-    - "+.microsoft.com"
-    - "+.msftconnecttest.com"
-    - "+.msftncsi.com"
-    #  NTP Service
-    - "ntp.*.com"
-    - "time-ios.apple.com"
-    - "time-macos.apple.com"
-    - "time.*.com"
-    - "time.*.gov"
-    - "+.pool.ntp.org"
-    - "*.cloud.tencent.com"
-    - "*.pool.ntp.org"
-    - "pool.ntp.org"
   nameserver-policy: 
     "rule-set:private": "system" 
     "auth.ysu.edu.cn": "system"     
