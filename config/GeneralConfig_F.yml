@@ -48,9 +48,11 @@ geox-url:
       
 dns:
   enable: true
-  use-hosts: true
+  use-hosts: false
+  use-system-hosts: false
+  respect-rules: true
   cache-algorithm: arc
-  prefer-h3: false
+  prefer-h3: true
   ipv6: false
   listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
@@ -76,7 +78,7 @@ dns:
     - https://120.53.53.53/dns-query
   proxy-server-nameserver:
     - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-query
+    - https://1.12.12.12/dns-query
   fallback:
     - https://1.1.1.1/dns-query
     - https://1.0.0.1/dns-query
