@@ -52,7 +52,7 @@ dns:
   use-system-hosts: false
   respect-rules: true
   cache-algorithm: arc
-  prefer-h3: false
+  prefer-h3: true
   ipv6: false
   listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
