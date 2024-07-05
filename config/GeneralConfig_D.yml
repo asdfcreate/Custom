@@ -36,7 +36,7 @@ ntp:
   port: 123
   interval: 30
   
-geodata-mode: true
+geodata-mode: false
 geosite-matcher: succinct
 geodata-loader: memconservative 
 geo-auto-update: true
@@ -45,6 +45,7 @@ geox-url:
   geoip: "https://raw.githubusercontent.com/DustinWin/ruleset_geodata/clash/geoip-lite.dat"
   geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite-lite.dat"
   mmdb: "https://cdn.jsdelivr.net/gh/DustinWin/ruleset_geodata@clash/Country-lite.mmdb" 
+  asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
   
 dns:
   enable: true
