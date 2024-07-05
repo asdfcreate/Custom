@@ -1,5 +1,0 @@
-# https://raw.githubusercontent.com/asdfcreate/Custom/master/ruleset/Claude.list
-payload:
-  - 'cdn.usefathom.com'
-  - '+.anthropic.com'
-  - '+.claude.ai'
