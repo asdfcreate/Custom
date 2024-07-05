@@ -1,6 +1,6 @@
 payload:
   - '+.xn--ngstr-lra8j.com'
-  - 'services.googleapis.cn'
+  - '+.services.googleapis.cn'
   - 'tasks-pa.googleapis.com'
   - 'calendar.google.com'
   - 'calendarsync-pa.googleapis.com'
