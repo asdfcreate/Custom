@@ -1,0 +1,31 @@
+# https://raw.githubusercontent.com/Repcz/Tool/X/Clash/Rules/Telegram.list
+# https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.yaml
+
+payload:
+    - '+.cdn-telegram.org'
+    - '+.comments.app'
+    - '+.contest.com'
+    - '+.fragment.com'
+    - '+.graph.org'
+    - '+.quiz.directory'
+    - '+.t.me'
+    - '+.tdesktop.com'
+    - '+.telega.one'
+    - '+.telegra.ph'
+    - '+.telegram-cdn.org'
+    - '+.telegram.dog'
+    - '+.telegram.me'
+    - '+.telegram.org'
+    - '+.telegram.space'
+    - '+.telesco.pe'
+    - '+.tg.dev'
+    - '+.tx.me'
+    - '+.usercontent.dev'
+    - '+.legra.ph'
+    - '+.mbrx.app'
+    - '+.stel.com'
+    - '+.telegramdownload.com'
+    - 'events-gateway.ncdev.site'
+    - '+.walletbot.me'
+
+
