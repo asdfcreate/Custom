@@ -187,15 +187,7 @@ proxy-groups:
       - Proxy
     use:
       - provider1
-      
-  - name: Profile_Update
-    type: select
-    proxies:
-      - Proxy
-      - DIRECT
-    use:
-      - provider1
-      
+         
 rule-providers:
   Reject_Custom:
     type: http
@@ -312,8 +304,6 @@ rule-providers:
     path: ./providers/rule-provider_ChinaIPsBGP.yaml
     interval: 3600
 rules:
-  - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((RULE-SET,ChinaMax_Domain))),REJECT
-  - AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(NOT,((RULE-SET,ChinaIPsBGP,no-resolve))),REJECT
   - RULE-SET,Reject_Custom,REJECT
   - RULE-SET,category-httpdns,REJECT
   - RULE-SET,AWAvenue-Ads-Rule-Clash,REJECT
@@ -326,11 +316,6 @@ rules:
   - RULE-SET,OpenAI_ipcidr,OpenAI,no-resolve
   - DOMAIN-KEYWORD,openaicom-api,OpenAI
   - RULE-SET,category-scholar-!cn,Scholar
-  - AND,((PROCESS-NAME,Clash Verge.exe),(DOMAIN-SUFFIX,workers.dev)),Profile_Update
-  - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,workers.dev)),Profile_Update
-  - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,githubusercontent.com)),Profile_Update
-  - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,gitlab.com)),Profile_Update
-  - AND,((PROCESS-NAME,mihomo),(DOMAIN-SUFFIX,id9.cc)),Profile_Update
   - RULE-SET,Notion,Notion
   - RULE-SET,Immersive_Translate,ImTr
   - RULE-SET,google,Google
