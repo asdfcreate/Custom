@@ -72,6 +72,7 @@ dns:
     "rule-set:private": "system" 
     "auth.ysu.edu.cn": "system"     
   nameserver:
+    - 223.5.5.5
     - 114.114.114.114
     - 1.2.4.8
     - 180.184.1.1
