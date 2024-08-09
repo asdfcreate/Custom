@@ -71,7 +71,14 @@ dns:
     - "+.msftncsi.com"
   nameserver-policy: 
     "rule-set:private": "system" 
-    "rule-set:direct,DirectCustom": 
+    'geosite:cn':
+      - 114.114.114.114
+      - 1.2.4.8
+      - 180.184.1.1
+      - 180.76.76.76
+      - 218.30.118.6
+      - 114.215.126.16
+    "rule-set:DirectCustom": 
       - 114.114.114.114
       - 1.2.4.8
       - 180.184.1.1
